@@ -7,10 +7,10 @@
 
 body{
     min-height: 110vh;
-    background-image: url("WhatsApp Image 2026-09-10 at 2.23.08 PM.jpeg");
-    background-size: cover;
-    background-position: center;
 }
+
+
+/* Navbar */
 
 .navbar{
     display: flex;
@@ -62,11 +62,17 @@ nav a:hover::after{
 }
 
 
+/* Hero */
+
 .hero{
     text-align: center;
     color: white;
-    margin-top: 150px;
-    padding: 0 20px 50px;
+    margin-top: 0;
+    padding: 150px 20px 200px;
+
+    background-image: url("WhatsApp Image 2026-09-10 at 2.23.08 PM.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h1{
@@ -97,6 +103,8 @@ nav a:hover::after{
 }
 
 
+/* Destinations */
+
 .destinations{
     text-align: center;
     padding: 80px 60px;
@@ -115,14 +123,12 @@ nav a:hover::after{
     margin-bottom: 40px;
 }
 
-
 .destination-cards{
     display: grid;
     grid-template-columns: repeat(4, 250px);
     justify-content: center;
     gap: 25px;
 }
-
 
 .destination-card{
     width: 250px;
@@ -148,117 +154,10 @@ nav a:hover::after{
     font-size: 22px;
     color: #333;
 }
-.About{
-    text-align: center;
-    padding: 80px 60px;
-    background: #f5fbfd;
-}
-.About h2{
-    font-size: 35px;
-    color: #087c9e;
-    margin-bottom: 20x;
-}
-.About p{
-    color: #666;
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: auto;
-}
-.contact{
-    text-align: center;
-    padding: 80px 60px;
-    background: white;
-}
-.contact h2 {
-font-size: 35px;
-color: #087c9e;
-margin-bottom: 10px;
-}
-.contact > p{
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 35px;
-}
-.contact form{
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.contact input,
-.contact textarea{
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-}
-.contact textarea{
-    height: 150px;
-    resize: none;
-}
-.contact button{
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    background: #087c9e;
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-}
-footer{
-    text-align: center;
-    padding: 25px;
-    background: #087c9e;
-    color: white;
-    font-size: 16px;
-}
-.reviews{
-    text-align: center;
-    padding: 80px 60px;
-    background: #f5fbfd;
-}
-.reviews h2{
-    font-size: 35px;
-    color: #087c9e;
-    margin-bottom: 10px;
-}
-.reviews >p{
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-.review-cards{
-    display: grid;
-    grid-template-columns: repeat(3, 280px);
-    justify-content: center;
-    gap: 25px;
-}
-.review-card{
-    background: white;
-    padding: 30px 25px;
-    border-radius: 15px;
-    box-shadow: 0 15px rgba(0, 0, 0, 0.15);
-}
-.stars{
-    color: #f5b400;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-.review-card p{
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-.review-card h3{
-    color: #087c9e;
-    font-size: 20px;
-}
+
+
+/* Activities */
+
 .activities{
     text-align: center;
     padding: 80px 60px;
@@ -313,4 +212,146 @@ footer{
     color: #666;
     font-size: 16px;
     line-height: 1.6;
+}
+
+
+/* About */
+
+.About{
+    text-align: center;
+    padding: 80px 60px;
+    background: #f5fbfd;
+}
+
+.About h2{
+    font-size: 35px;
+    color: #087c9e;
+    margin-bottom: 20px;
+}
+
+.About p{
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* Reviews */
+
+.reviews{
+    text-align: center;
+    padding: 80px 60px;
+    background: #f5fbfd;
+}
+
+.reviews h2{
+    font-size: 35px;
+    color: #087c9e;
+    margin-bottom: 10px;
+}
+
+.reviews > p{
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.review-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card{
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.stars{
+    color: #f5b400;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.review-card p{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-card h3{
+    color: #087c9e;
+    font-size: 20px;
+}
+
+
+/* Contact */
+
+.contact{
+    text-align: center;
+    padding: 80px 60px;
+    background: white;
+}
+
+.contact h2{
+    font-size: 35px;
+    color: #087c9e;
+    margin-bottom: 10px;
+}
+
+.contact > p{
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.contact form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact textarea{
+    height: 150px;
+    resize: none;
+}
+
+.contact button{
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #087c9e;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 25px;
+    background: #087c9e;
+    color: white;
+    font-size: 16px;
 }
