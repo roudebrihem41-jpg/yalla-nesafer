@@ -9,14 +9,20 @@ body{
     min-height: 110vh;
 }
 
-
 /* Navbar */
-
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    background: transparent;
 }
 
 .logo img{
@@ -63,16 +69,22 @@ nav a:hover::after{
 
 
 /* Hero */
-
 .hero{
-    text-align: center;
-    color: white;
-    margin-top: 0;
-    padding: 150px 20px 200px;
+    min-height: 110vh;
 
     background-image: url("WhatsApp Image 2026-09-10 at 2.23.08 PM.jpeg");
     background-size: cover;
     background-position: center;
+
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px 50px;
 }
 
 .hero h1{
@@ -104,7 +116,6 @@ nav a:hover::after{
 
 
 /* Destinations */
-
 .destinations{
     text-align: center;
     padding: 80px 60px;
@@ -157,7 +168,6 @@ nav a:hover::after{
 
 
 /* Activities */
-
 .activities{
     text-align: center;
     padding: 80px 60px;
@@ -216,7 +226,6 @@ nav a:hover::after{
 
 
 /* About */
-
 .About{
     text-align: center;
     padding: 80px 60px;
@@ -239,7 +248,6 @@ nav a:hover::after{
 
 
 /* Reviews */
-
 .reviews{
     text-align: center;
     padding: 80px 60px;
@@ -292,7 +300,6 @@ nav a:hover::after{
 
 
 /* Contact */
-
 .contact{
     text-align: center;
     padding: 80px 60px;
@@ -347,7 +354,6 @@ nav a:hover::after{
 
 
 /* Footer */
-
 footer{
     text-align: center;
     padding: 25px;
